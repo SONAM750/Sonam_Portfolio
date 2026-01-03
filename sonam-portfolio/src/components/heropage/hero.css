@@ -1,0 +1,32 @@
+/* .herodiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+} */
+
+.herodiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+      padding: 0px 20px 20px 20px;
+}
+
+.hero-left {
+  max-width: 600px;
+}
+
+.hero-right img {
+  width: 300px;
+  height: auto;
+}
+.btncont{
+      display: flex;
+    gap: 12px;
+    margin: 10px;
+}
+.icondiv{
+      width: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
