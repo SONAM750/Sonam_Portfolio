@@ -110,3 +110,51 @@ background: linear-gradient(
   max-width: 320px;
   border-radius: 20px;
 }
+
+/* ========================= */
+/* HERO MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr; /* single column */
+    padding: 80px 16px 60px;
+    gap: 40px;
+    text-align: center;
+  }
+
+  /* Text section */
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .hero-left h2 {
+    font-size: 1.1rem;
+  }
+
+  .hero-left p {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+
+  /* Buttons */
+  .btncont {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hireme,
+  .viewproject {
+    width: 160px;
+  }
+
+  /* Icons */
+  .icondiv {
+    justify-content: center;
+  }
+
+  /* Image section */
+  .hero-right img {
+    max-width: 240px;
+  }
+}

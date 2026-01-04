@@ -65,7 +65,7 @@ function Contact() {
         "service_s3juebf",     // 🔹 your SERVICE ID
         "template_p8x7vy4",     // 🔹 your TEMPLATE ID
         formRef.current,       // 🔹 form reference
-        "I3K7pxigr9wU7OIb0QfqG"       // 🔹 your PUBLIC KEY
+        "xEJ6cQme3uTLGKgvy"       // 🔹 your PUBLIC KEY
       )
       .then(
         () => {
