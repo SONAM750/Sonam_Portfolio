@@ -1,21 +1,62 @@
 .navbar {
-  height: 80px;
-  padding: 0 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background: #0b132b;
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* CONTAINER */
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 24px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
 }
 
+/* LOGO */
 .logo {
   font-size: 20px;
   font-weight: 600;
+  color: var(--color-text-heading);
 }
 
+/* LINKS */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 32px;
-  font-size: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-text-heading);
+  font-weight: 500;
+  position: relative;
+}
+
+/* HOVER EFFECT */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  left: 0;
+  bottom: -6px;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
 }

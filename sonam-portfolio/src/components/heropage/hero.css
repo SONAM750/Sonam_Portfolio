@@ -1,32 +1,112 @@
-/* .herodiv {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-} */
+.hero-section {
+background: linear-gradient(
+  180deg,
+  #0b132b 0%,
+  #1c2541 60%,
+  #243b55 100%
+);
 
-.herodiv {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-      padding: 0px 20px 20px 20px;
+   /* background: linear-gradient(
+    180deg,
+    #243b55 0%,
+    #0b132b 100%
+  ); */
 }
 
-.hero-left {
-  max-width: 600px;
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 24px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+/* LEFT TEXT */
+.hero-left h1 {
+  font-size: 2.6rem;
+  color: var(--color-text-heading);
+  margin-bottom: 12px;
+}
+
+.hero-left h2 {
+  font-size: 1.4rem;
+  color: var(--color-text-body);
+  margin-bottom: 16px;
+}
+
+.hero-left p {
+  max-width: 480px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+
+.btncont {
+  display: flex;
+  gap: 14px;
+  margin: 28px 0 24px;
+}
+
+
+.hireme {
+  background: var(--color-accent);
+  color: var(--color-text-heading);
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+.viewproject {
+  background: transparent;
+  border: 1px solid var(--color-text-heading);
+  color: var(--color-text-heading);
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+.hireme,
+.viewproject {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.hireme:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(249, 115, 22, 0.45);
+}
+.viewproject:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ICONS */
+.icondiv {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+}
+.icondiv a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  transition: all 0.25s ease;
+}
+.icondiv a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.icondiv img {
+  filter: brightness(0) invert(1);
+}
+
+/* RIGHT IMAGE */
+.hero-right {
+  display: flex;
+  justify-content: center;
 }
 
 .hero-right img {
-  width: 300px;
-  height: auto;
-}
-.btncont{
-      display: flex;
-    gap: 12px;
-    margin: 10px;
-}
-.icondiv{
-      width: 50px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  max-width: 320px;
+  border-radius: 20px;
 }

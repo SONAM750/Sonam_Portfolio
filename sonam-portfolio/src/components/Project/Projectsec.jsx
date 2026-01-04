@@ -1,17 +1,20 @@
-
-
-import './project.css';
-import ProjectData from './ProjectData.js';
+import "./project.css";
+import ProjectData from "./ProjectData.js";
 
 const Projectsec = () => {
   return (
-    <section className="projects">
-      <h2>Projects</h2>
+    <section className="projects" id="projects">
+      <div className="project-container">
+
+    
+      <h2 className="project-title">Projects</h2>
 
       <div className="projects-grid">
         {ProjectData.map((project, index) => (
           <div className="project-card" key={index}>
-            <img src={project.image} alt={project.title} />
+            <div className="project-image">
+              <img src={project.image} alt={project.title} />
+            </div>
 
             <div className="project-content">
               <h3>{project.title}</h3>
@@ -30,7 +33,9 @@ const Projectsec = () => {
               </div>
             </div>
           </div>
+          
         ))}
+      </div>
       </div>
     </section>
   );

@@ -1,0 +1,125 @@
+/* ===== EXPERIENCE SECTION ===== */
+.experience-section {
+  padding:20px;
+  background: linear-gradient(
+    180deg,
+    #1c2541 0%,
+    #0b132b 100%
+  );
+}
+
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 55px 24px;
+}
+
+/* ===== TITLE ===== */
+.experience-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.experience-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #f97316; /* accent */
+  margin-top: 12px;
+  border-radius: 2px;
+}
+
+/* ===== CARD ===== */
+.experience-card {
+  background: #1c2541;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 32px;
+  max-width: 700px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== COMPANY NAME ===== */
+.experience-card h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+/* ===== ROLE ===== */
+.role {
+  font-size: 1rem;
+  color: #60a5fa;
+  margin-bottom: 4px;
+}
+
+/* ===== DURATION ===== */
+.duration {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 16px;
+}
+
+/* ===== DESCRIPTION ===== */
+.description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+/* ===== TECH TAGS ===== */
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.experience-tags span {
+  background: rgba(79, 70, 229, 0.2);
+  color: #c7d2fe;
+  padding: 6px 14px;
+  border-radius: 14px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* ===== CERTIFICATE LINK ===== */
+.cert-link {
+  display: inline-block;
+  background: #f97316;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(249, 115, 22, 0.4);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .experience-card {
+    padding: 24px;
+  }
+
+  .experience-title {
+    font-size: 2.2rem;
+  }
+}

@@ -1,3 +1,25 @@
+:root {
+  /* ===== BRAND ===== */
+  --color-primary: #4f46e5;     /* Indigo */
+  --color-secondary: #06b6d4;   /* Cyan */
+  --color-accent: #f97316;      /* Orange */
+
+  /* ===== BACKGROUNDS ===== */
+  --color-bg-main: #0f172a;
+  --color-bg-section: #111827;
+  --color-bg-card: #1e293b;
+
+  /* ===== TEXT ===== */
+  --color-text-heading: #f8fafc;
+  --color-text-body: #cbd5e1;
+  --color-text-muted: #94a3b8;
+
+  /* ===== BORDER & SHADOW ===== */
+  --color-border: #334155;
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
