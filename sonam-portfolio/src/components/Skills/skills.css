@@ -77,3 +77,81 @@
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
+/* =========================
+   RESPONSIVE – TABLET
+   ========================= */
+@media (max-width: 1024px) {
+  .skills-container {
+    padding: 50px 20px;
+  }
+
+  .skills-title {
+    font-size: 2.4rem;
+  }
+
+  .skills-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+  }
+
+  .skills-grid {
+    gap: 24px;
+  }
+
+  .skill-card {
+    padding: 26px 18px;
+  }
+}
+
+/* =========================
+   RESPONSIVE – MOBILE
+   ========================= */
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 40px 16px;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .skills-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .skill-card {
+    padding: 22px 16px;
+  }
+
+  .skill-card img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .skill-card span {
+    font-size: 0.9rem;
+  }
+}
+
+/* =========================
+   SMALL MOBILE (VERY SMALL)
+   ========================= */
+@media (max-width: 480px) {
+  .skills-title {
+    font-size: 1.8rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skill-card {
+    padding: 20px 14px;
+  }
+}
