@@ -20,8 +20,14 @@ function Hero() {
           </p>
 
           <div className="btncont">
-            <button className="hireme">Hire Me</button>
-            <button className="viewproject">View Projects</button>
+            <button className="hireme">
+              <a href="#contact" className="hirelink">
+               Hire Me
+              </a>
+             
+              </button>
+            <button className="viewproject">
+               <a href="#projects" className="hirelink">View Projects</a></button>
           </div>
 
           <div className="icondiv">

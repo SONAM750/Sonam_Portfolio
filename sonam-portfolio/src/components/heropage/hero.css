@@ -12,7 +12,10 @@ background: linear-gradient(
     #0b132b 100%
   ); */
 }
-
+a{
+  color:unset;
+  text-decoration: none;
+}
 .hero-container {
   max-width: 1200px;
   margin: auto;
